@@ -1,0 +1,109 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #6d3051;
+  position: fixed;
+  align-items: center;
+  width: 100%;
+  z-index: 10;
+}
+header h1 {
+  color: white;
+  margin: 0.5rem;
+  margin-left: 3rem;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+}
+.wish {
+  background-color: #6d3051;
+  padding: 1.2rem;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ff9900;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.vis {
+  display: none;
+  font-size: 1.5rem;
+}
+.wish:hover {
+  background-color: #ff9900;
+  color: #6d3051;
+}
+.cart {
+  margin: 0 2rem;
+  padding: 0.5rem 3rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 0.6rem;
+  border-radius: 1rem;
+  background-color: white;
+  color: #6d3051;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-height: 4rem;
+  position: relative;
+}
+.cart:hover {
+  transform: scale(1.1);
+}
+.cart i {
+  font-size: 1rem;
+}
+
+.badge {
+  background-color: #28c471;
+  color: white;
+  padding: 0.2rem 0.3rem;
+  border-radius: 1rem;
+  position: absolute;
+  top: 0;
+  right: 2.5rem;
+}
+.bump {
+  animation: bump 300ms ease-out;
+}
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media (max-width: 767px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: inline-block;
+  }
+  .cart {
+    background-color: #6d3051;
+  }
+  .cart i {
+    color: white;
+    font-size: 1.5rem;
+  }
+}

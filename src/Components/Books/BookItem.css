@@ -1,0 +1,73 @@
+.book {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  background-color: white;
+  position: relative;
+  min-width: 9rem;
+  box-shadow: 2px 5px 4px rgba(0, 0, 0, 16%);
+  transform: rotate3d(-120deg, -120deg, -20deg);
+}
+.fav .fa-solid {
+  color: #ff9900;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 0.2rem;
+}
+.details h4 {
+  font-size: 0.7rem;
+  color: #615a5a;
+}
+.details p {
+  font-size: 0.6rem;
+  color: #615a5a;
+}
+.img {
+  overflow: hidden;
+  cursor: pointer;
+  max-height: 12rem;
+  transition: 0.3s ease-in-out;
+}
+img {
+  width: 100%;
+  object-fit: contain;
+}
+.details .price {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #28c471;
+}
+.fav,
+.add {
+  position: absolute;
+  width: fit-content;
+  padding: 0.2rem 0.4rem;
+  border-radius: 1rem;
+  border: none;
+  color: rgb(63, 60, 60);
+  right: 0.3rem;
+  cursor: pointer;
+}
+.fav {
+  padding: 0.2rem;
+  color: gray;
+  top: 0.5rem;
+  opacity: 70%;
+}
+.fav:hover {
+  opacity: 100%;
+}
+.add {
+  bottom: 0.5rem;
+  background-color: #28c471;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.add i {
+  margin-left: 2px;
+}
+.add:hover {
+  transform: scale(1.1);
+}

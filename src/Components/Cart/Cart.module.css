@@ -1,0 +1,35 @@
+.booksCart {
+  max-height: 20rem;
+  overflow: auto;
+  margin: 1rem 0;
+}
+.btns {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.btns button {
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  color: white;
+}
+.alt {
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  color: white;
+  background-color: orangered;
+  margin: 1rem;
+}
+.close {
+  background-color: orangered;
+}
+.order {
+  background-color: #28c471;
+}
